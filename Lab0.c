@@ -8,6 +8,7 @@ int main(int argc, const char * argv[]) {
     int fileopen = open(argv[1], O_RDONLY);
     if(fileopen<0){
         if((argc>2)&&(argv[1][0]=='-')){
+            printf("Original\tASCII\t\tDecimal\t\tParity\n--------\t--------\t--------\t--------\n");
             for(int i=2; i<argc; i++){
                 int length = strlen(argv[i]);
                 if(length>8){
@@ -15,7 +16,6 @@ int main(int argc, const char * argv[]) {
                 }
                 int ascii=0;
                 int parity=0;
-                printf("Original\tASCII\t\tDecimal\t\tParity\n--------\t--------\t--------\t--------\n");
                 for(int j=0; j<8; j++){
                     if(j>=length){
                         printf("0");
@@ -167,6 +167,7 @@ int main(int argc, const char * argv[]) {
             }
         }
         else if((argc>1)&&(argv[1][0]!='-')){
+            printf("Original\tASCII\t\tDecimal\t\tParity\n--------\t--------\t--------\t--------\n");
             for(int i=1; i<argc; i++){
                 int length = strlen(argv[i]);
                 if(length>8){
@@ -174,7 +175,6 @@ int main(int argc, const char * argv[]) {
                 }
                 int ascii=0;
                 int parity=0;
-                printf("Original\tASCII\t\tDecimal\t\tParity\n--------\t--------\t--------\t--------\n");
                 for(int j=0; j<8; j++){
                     if(j>=length){
                         printf("0");
