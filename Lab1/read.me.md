@@ -1,4 +1,4 @@
 # Lab1
 
 2/29/2020:
-Lab1 created and being worked on.
+Lab1 Finished, can't tell if System and User times working correctly.
