@@ -330,7 +330,6 @@ int main(int argc, const char * argv[]) {
         }
     }
     else if(argc==2){
-        
         printf("Open: %d\n", fileopen);
         char input[1024];
         char character[8];
